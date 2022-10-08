@@ -9,7 +9,7 @@ RUN npm run build
 FROM node:18.1-alpine
 
 WORKDIR /app
-COPY --from=appbuild package*.json
+COPY package*.json ./
 COPY --from=appbuild /app/node_modules ./node_modules
 COPY --from=appbuild /app/out ./out
-RUN npm start
+CMD npm start
