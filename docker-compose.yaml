@@ -5,7 +5,7 @@ services:
         container_name: EDIT_ME
         build:
             context: .
-            dockerfile: dockerfile
+            dockerfile: Dockerfile
         stop_signal: SIGINT
         restart: on-failure
         env_file: .env
