@@ -1,8 +1,8 @@
 import 'dotenv/config';
-import { Telegraf } from "telegraf";
+import { Telegraf } from 'telegraf';
 
 const token = process.env.TOKEN;
-if (!token) throw new Error('TOKEN must be provided!')
+if (!token) throw new Error('TOKEN must be provided!');
 
 const bot = new Telegraf(token);
 
