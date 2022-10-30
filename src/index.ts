@@ -6,6 +6,8 @@ if (!token) throw new Error('TOKEN must be provided!');
 
 const bot = new Telegraf(token);
 
+bot.start(ctx => ctx.reply('Hello World!'));
+
 bot.catch(err => {
     const color = {
         red: '\x1b[41m',
@@ -17,8 +19,6 @@ bot.catch(err => {
     const { message, name } = err as Error;
     console.error(dateString, `${name}: ${message}`);
 });
-
-bot.start(ctx => ctx.reply('Hello World!'));
 
 bot.launch();
 
