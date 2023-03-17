@@ -10,7 +10,6 @@
       "plugin:@typescript-eslint/recommended"
     ],
     "rules":{
-        "camelcase":"warn",
         "dot-notation":"warn",
         "no-extra-semi":"warn",
         "no-var":"error",
