@@ -9,15 +9,9 @@ const bot = new Telegraf(token);
 bot.start(ctx => ctx.reply('Hello World!'));
 
 bot.catch(err => {
-    const color = {
-        red: '\x1b[41m',
-        reset: '\x1b[0m'
-    };
-
-    const date = new Date();
-    const dateString = `${color.red}[${date.toLocaleDateString()} ${date.toLocaleTimeString()}]${color.reset}`;
-    const { message, name } = err as Error;
-    console.error(dateString, `${name}: ${message}`);
+    // Handle errors here
+    const { constructor: { name }, message } = <Error>err;
+    console.error(`[${new Date().toLocaleString('uk')}] \x1b[41m${name}\x1b[0m | ${message}`);
 });
 
 bot.launch();

@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es2016",                                 
-    "module": "CommonJS",     
-
-    "resolveJsonModule": true,                            /* Enable importing .json files */
-    "sourceMap": true,                                    /* Create source map files for emitted JavaScript files. */
-    "outDir": "out",                                      /* Specify an output folder for all emitted files. */
-    "esModuleInterop": true,                              /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */
-    "forceConsistentCasingInFileNames": true,             /* Ensure that casing is correct in imports. */
-
-    "strict": true,                                       /* Enable all strict type-checking options. */
-    "allowUnreachableCode": false,                        /* Disable error reporting for unreachable code. */
-    "skipLibCheck": false                                 /* Skip type checking all .d.ts files. */
+    "target": "es2016",
+    "module": "CommonJS",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "outDir": "out",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "allowUnreachableCode": false,
+    "skipLibCheck": false
   },
-  "include": ["./src/"] /* Source code directories to include */
+  "include": [
+    "./src/"
+  ]
 }
